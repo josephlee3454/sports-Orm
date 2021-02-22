@@ -14,3 +14,122 @@
         </ol>
     </div>
 </div>
+   <h3>All Atlantic Soccer Conference Teams</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Team Name</th>
+                <th>Team Location</th>
+            </tr>
+            @foreach(var item in ViewBag.atlanticTeams)
+            {
+                <tr>
+                    <td>@item.TeamName</td>
+                    <td>@item.Location</td>
+                </tr>
+            }
+        </table>
+
+       <h3>...all (current) players on the Boston Penguins</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Team Name</th>
+                <th>Team Location</th>
+            </tr>
+            @foreach(var item in ViewBag.BostonPenguins)
+            {
+                <tr>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                </tr>
+            }
+        </table>
+
+           <h3>ICBC</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            @foreach(var item in ViewBag.ICBC)
+            {
+                <tr>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                </tr>
+            }
+        </table>
+
+           <h3> American Conference of Amateur Football with last name "Lopez"</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>FirstName</th>
+                <th>Last Name</th>
+            </tr>
+            @foreach(var item in ViewBag.ACAFLopez)
+            {
+                <tr>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                </tr>
+            }
+        </table>
+
+         </table>
+
+           <h3>A...all teams with a (current) player named "Sophia"</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Team</th>
+                <th>Location</th>
+            </tr>
+            @foreach(var item in ViewBag.Sophia)
+            {
+                <tr>
+                    <td>@item.TeamName</td>
+                    <td>@item.Location</td>
+                </tr>
+            }
+        </table>
+
+
+          </table>
+
+           <h3>...all leagues with a (current) player named "Sophia"</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Sport</th>
+            </tr>
+            @foreach(var item in ViewBag.AllLegSophia)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Sport</td>
+                    
+                </tr>
+            }
+        </table> 
+
+
+          </table>
+
+           <h3>Flores" who DOESN'T (currently) play for the Washington Roughriders</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Sport</th>
+                <th>Team name</th>
+            </tr>
+            @foreach(var item in ViewBag.FindFlores)
+            {
+               
+
+                    <tr>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.CurrentTeam.TeamName</td>
+                        
+                    </tr>
+                
+            }
+        </table> 
